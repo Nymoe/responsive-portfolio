@@ -17,7 +17,7 @@
   font-weight: 400;
 }
  
-/* Default CSS */
+/************************Default CSS************************/
 * {
   margin: 0;
   padding: 0;
@@ -38,81 +38,98 @@ body {
   font-family: 'Centra', sans-serif !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+html, body {
   margin: 0;
   padding: 0;
-  line-height: normal;
+  height: 100%;
 }
 
-p, a, li, button, ul {
-  margin: 0;
-  padding: 0;
-  line-height: normal;
-  text-decoration: none;
-}
+/************************NavBar CSS************************/
 
-a:hover {
-  text-decoration: none;
-}
-
-img {
+/* Ensures the navbar takes the full width */
+.navbar .header {
   width: 100%;
-  height: auto;
+  padding: 1.5rem 0; /* Increase the vertical padding to add height */
 }
 
-button {
-  border: 0;
-  background-color: transparent;
+/* Styles the navbar with a dark background */
+.navbar.bg-dark {
+  background-color: #343a40; /* Bootstrap's dark theme color */
 }
 
-input:focus, textarea:focus, select:focus {
-  outline: none;
+/* Applies styles to the brand name in the navbar */
+.navbar-brand {
+  color: #ffffff; /* Sets the text color to white */
+  font-size: 1.5rem; /* Adjust the size as needed */
+  font-weight: bold; /* Makes the brand name bold */
+  margin-right: 2rem; /* Adds some space after the brand name */
+  margin-left: 1rem;
+  text-decoration: none; /* Removes the underline from the brand name */
 }
 
-@media (min-width:1700px) {
-	main .container {
-		max-width: 100%;
-		padding: 0 150px;
-	}
+/* Styles for navigation links */
+.nav-link {
+  color: #9da5b1; /* Light grey color for the links for contrast against the dark background */
+  font-size: 1rem; /* Size of the nav links */
+  padding: 0.5rem 1rem; /* Top and bottom padding with some horizontal padding */
+  margin: 0 0.5rem; /* Adds some margin between the links */
+  transition: color 0.3s; /* Smooth transition for color change on hover */
 }
 
-p.success {
-	color: green;
+/* Changes the color of nav links on hover to give feedback to the user */
+.nav-link:hover {
+  color: #ffffff; /* White color on hover for better visibility */
 }
 
-p.danger {
-	color: red;
+/* Additional styles for active or current page link indicator */
+.nav-link.active {
+  color: #ffffff; /* Makes the active link more prominent */
+  border-bottom: 2px solid #ffffff; /* Underlines the active link */
 }
 
-/************ Navbar Css ************/
-nav.navbar {
-  padding: 18px 0;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 9999;
-  transition:  0.32s ease-in-out;
+/* Container within the Navbar for better spacing and layout */
+.container {
+  display: flex; /* Uses flexbox for layout */
+  justify-content: space-between; /* Spaces out the logo and the nav items */
+  align-items: center; /* Vertically centers the items within the navbar */
 }
-nav.navbar.scrolled {
-  padding: 0px 0;
-  background-color: #121212;
+
+/* Ensures the navbar is responsive on smaller screens */
+@media (max-width: 768px) {
+  .navbar .header {
+    flex-direction: column; /* Stacks the items vertically on smaller screens */
+  }
+
+  .navbar-brand {
+    margin-bottom: 1rem; /* Adds some space below the brand on smaller screens */
+  }
+
+  .nav-link {
+    text-align: center; /* Centers the links */
+    padding: 0.25rem 1rem; /* Adjusts padding for a tighter layout */
+  }
+
+  .nav {
+    width: 100%; /* Makes the nav take full width */
+  }
 }
-nav.navbar a.navbar-brand {
-    width: 9%;
+
+/************************Footer CSS************************/
+
+#app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-nav.navbar .navbar-nav .nav-link.navbar-link {
-  font-weight: 400;
-  color: #fff !important;
-  letter-spacing: 0.8px;
-  padding: 0 25px;
-  font-size: 18px;
-  opacity: 0.75;
+
+#content-wrap {
+  flex: 1;
 }
-nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
-nav.navbar .navbar-nav a.nav-link.navbar-link.active {
-    opacity: 1;
+
+.brand {
+  margin-left: 42.5rem;
 }
-span.navbar-text {
-    display: flex;
-    align-items: center;
+
+.copyright {
+  margin-right: 42.5rem;
 }
