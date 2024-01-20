@@ -1,22 +1,10 @@
 /* Custom Fonts */
 @font-face {
-  font-family: Centra;
-  src: url(/home/nymoe/github/portfolio/responsive-portfolio/portfolio/src/fonts/CentraNo2-Bold.ttf);
-  font-weight: 700;
+  font-family: Poppins;
+  src: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,100&display=swap');
+  font-weight: Thin 100 Italic;
 }
 
-@font-face {
-  font-family: Centra;
-  src: url(/home/nymoe/github/portfolio/responsive-portfolio/portfolio/src/fonts/CentraNo2-Book.ttf);
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: Centra;
-  src: url(/home/nymoe/github/portfolio/responsive-portfolio/portfolio/src/fonts/CentraNo2-Medium.ttf);
-  font-weight: 400;
-}
- 
 /************************Default CSS************************/
 * {
   margin: 0;
@@ -35,7 +23,7 @@ body {
   position: relative;
   background-color: #121212 !important;
   color: #fff !important;
-  font-family: 'Centra', sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 html, body {
@@ -47,7 +35,7 @@ html, body {
 /************************NavBar CSS************************/
 
 /* Ensures the navbar takes the full width */
-.navbar .header {
+.navbar {
   width: 100%;
   padding: 1.5rem 0; /* Increase the vertical padding to add height */
 }
@@ -119,17 +107,75 @@ html, body {
 #app-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 
 #content-wrap {
   flex: 1;
 }
 
-.brand {
-  margin-left: 42.5rem;
+.footer {
+  position: fixed;
+  bottom: 0; 
+  width: 100%;
+  padding: 1.5rem 0; /* Increase the vertical padding to add height */
+  background-color: #343a40;
+  
 }
 
 .copyright {
-  margin-right: 42.5rem;
+  margin-right: 1.5rem;
+}
+
+/************************Home CSS************************/
+@keyframes fadeIn {
+  0% {opacity: 0; }
+  80% {opacity: 0.8;}
+}
+
+@keyframes bounce-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-30px);
+  }
+  80% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
+
+#imgRight {
+  width: 45%;
+  height: auto;
+  justify-content: center;
+}
+
+#img {
+  height: auto;
+  width: 60%;
+  margin-top: 15%;
+  margin-left: 10%;
+  opacity: 80%;
+  border-radius: 50%;
+  animation: bounce-in-right 2s ease;
+}
+
+
+#grid {
+  display: grid;
+  grid-template-areas:
+    'header'
+    'menu'
+    'menu';
+  margin-left: 6rem;
+  background-color: #343a40;
+  border-radius: 15%;
+  animation: fadeIn 5s;
+}
+
+#grid > h1, h3 {
+  margin: 1rem;
+  padding: 1rem;
+  color: #ffffff;
 }

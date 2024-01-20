@@ -1,8 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import { Row, Col } from 'react-bootstrap';
-import icon from '../icon.jpg';
 
-export default function Home() {
+export default function Skills() {
     return (
         <Container class="main">
             <Row id="grid">
