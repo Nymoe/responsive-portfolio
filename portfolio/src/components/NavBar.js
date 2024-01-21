@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 function NavBar() {
     return (
         <>
-        <Navbar bg="dark" data-bs-theme="dark" class="header">
+        <Navbar bg="dark" data-bs-theme="dark" id="header">
           <Container>
             <Navbar.Brand href="#home">My Portfolio</Navbar.Brand>
             <Nav className="me-auto">

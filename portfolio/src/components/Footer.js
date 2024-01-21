@@ -2,8 +2,8 @@ import { Container, Row, Col, Nav, Navbar } from 'react-bootstrap';
 
 export default function Footer() {
     return (
-      <Navbar fixed="bottom" bg="dark" variant="dark" class="footer">
-        <Container>
+      <Navbar fixed="bottom" bg="dark" variant="dark">
+        <Container id="footer">
           <Row>
             <Col className="brand">
               <Navbar.Brand href="#home">Belal Bounasri</Navbar.Brand>

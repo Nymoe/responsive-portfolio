@@ -9,13 +9,13 @@ import Projects from './components/Home';
 export default function App() {
   return (
     <div id="app-container">
-      <NavBar />
+        <NavBar />
       <main id="content-wrap">
         <Home />
         <Skills />
         <Projects />
       </main>
-      <Footer />
+        <Footer />
     </div>
   );
 }
