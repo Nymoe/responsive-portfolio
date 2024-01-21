@@ -158,7 +158,7 @@ html, body {
   margin-left: 10%;
   opacity: 80%;
   border-radius: 50%;
-  animation: bounce-in-right 2s ease infinite;
+  animation: bounce-in-right 2s ease;
 }
 
 
