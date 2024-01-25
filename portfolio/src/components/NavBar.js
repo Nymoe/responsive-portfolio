@@ -9,11 +9,11 @@ function NavBar() {
         <>
         <Navbar id="header">
           <Container>
-            <Navbar.Brand href="/responsive-portfolio/home">My Portfolio</Navbar.Brand>
+            <Navbar.Brand href="/home">My Portfolio</Navbar.Brand>
             <Nav className="me-auto">
-              <Nav.Link href="/responsive-portfolio/home">Home</Nav.Link>
-              <Nav.Link href="/responsive-portfolio/skills">Skills</Nav.Link>
-              <Nav.Link href="/responsive-portfolio/projects">Projects</Nav.Link>
+              <Nav.Link href="/home">Home</Nav.Link>
+              <Nav.Link href="/skills">Skills</Nav.Link>
+              <Nav.Link href="/projects">Projects</Nav.Link>
             </Nav>
           </Container>
         </Navbar>

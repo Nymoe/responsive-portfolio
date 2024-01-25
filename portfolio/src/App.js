@@ -19,9 +19,9 @@ export default function App() {
         <NavBar />
       </header>
         <Routes id="content-wrap">
-          <Route path="/responsive-portfolio/home" element={<Home />} />
-          <Route path="/responsive-portfolio/skills" element={<Skills />} /> 
-          <Route path="/responsive-portfolio/projects" element={<Projects />} /> 
+          <Route path="/home" element={<Home />} />
+          <Route path="/skills" element={<Skills />} /> 
+          <Route path="/projects" element={<Projects />} /> 
         </Routes>
         <footer>
           <Footer />
