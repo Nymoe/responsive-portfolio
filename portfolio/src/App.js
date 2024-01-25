@@ -3,8 +3,9 @@ import './App.css';
 import  NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import Home from './components/Home';
-import Skills from './components/Home';
-import Projects from './components/Home';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -14,13 +15,17 @@ import {
 export default function App() {
   return (
     <Router id="app-container">
-      <NavBar />
+      <header>
+        <NavBar />
+      </header>
         <Routes id="content-wrap">
           <Route path="/home" element={<Home />} />
-          {/* <Route path="/skills" element={<Skills />} /> */}
+          <Route path="/skills" element={<Skills />} /> 
+          <Route path="/projects" element={<Projects />} /> 
         </Routes>
-      <Footer />
+        <footer>
+          <Footer />
+        </footer>
     </Router>
-   
   );
 }

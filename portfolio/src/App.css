@@ -182,3 +182,135 @@ html, body {
   padding: 1rem;
   color: #ffffff;
 }
+
+
+/************************Skills CSS************************/
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% { transform: scale(.9); }
+  100% { transform: scale(1); }
+}
+
+@keyframes bounce-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-30px);
+  }
+  80% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes bounce-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(30px);
+  }
+  80% { transform: translateX(-10px); }
+  100% { transform: translateX(0); }
+}
+
+#skills-main {
+  text-align: center;
+  padding-top: 14rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 14rem;
+}
+
+#skills-main > .row{
+  padding: 2rem;
+  background-color: #343a40;
+  border-radius: 15%;
+}
+
+#skills-main > :nth-child(1) {
+  animation: bounce-in-left 2s ease-in;
+}
+
+#skills-main > :nth-child(2) {
+  animation: bounce-in 2s ease;
+}
+
+#skills-main > :nth-child(3) {
+  animation: bounce-in-right 2s ease-in;
+}
+
+/************************Projects CSS************************/
+
+#projects-main {
+  justify-content: center;
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+  width: 100%;
+}
+
+#link, #link:hover {-webkit-transition: color 0.5s ease-out;-moz-transition: color 0.5s ease-out;-ms-transition: color 0.5s ease-out;-o-transition: color 0.5s ease-out;transition: color 0.5s ease-out;}
+
+/** BEGIN CSS **/
+        body {background: #333333;}
+        @keyframes rotate-loading {
+            0%  {transform: rotate(0deg);-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
+            100% {transform: rotate(360deg);-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); -moz-transform: rotate(360deg);}
+        }
+
+        @keyframes loading-text-opacity {
+            0%  {opacity: 0}
+            20% {opacity: 0}
+            50% {opacity: 1}
+            100%{opacity: 0}
+        }
+
+        .loading-container,
+        .loading {
+            height: 200px;
+            position: relative;
+            width: 200px;
+            border-radius: 100%;
+        }
+
+        .loading-container { margin: 50px auto }
+
+        .loading {
+            border: 2px solid transparent;
+            border-color: transparent #fff transparent #FFF;
+            animation: rotate-loading 1.5s linear 0s infinite normal;
+            transform-origin: 50% 50%;
+        }
+
+        .loading-container:hover .loading {
+            border-color: transparent #E45635 transparent #E45635;
+        }
+        .loading-container:hover .loading,
+        .loading-container .loading {
+            transition: all 0.5s ease-in-out;
+        }
+
+        #loading-text {
+            animation: loading-text-opacity 2s linear 0s infinite normal;
+            color: #ffffff;
+            font-family: "Helvetica Neue, "Helvetica", ""arial";
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 85px;
+            opacity: 0;
+            position: absolute;
+            text-align: center;
+            text-transform: uppercase;
+            top: 0;
+            width: 200px;
+        }
