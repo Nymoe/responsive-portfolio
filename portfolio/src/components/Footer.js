@@ -6,7 +6,7 @@ export default function Footer() {
         <Container id="footer">
           <Row>
             <Col className="brand">
-              <Navbar.Brand href="#home">Belal Bounasri</Navbar.Brand>
+              <Navbar.Brand href="/home">Belal Bounasri</Navbar.Brand>
             </Col>
           </Row>
           <Row>

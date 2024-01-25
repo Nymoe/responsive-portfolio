@@ -41,11 +41,8 @@ html, body {
 }
 
 /* Styles the navbar with a dark background */
-.navbar.bg-dark {
-  background-color: #343a40; /* Bootstrap's dark theme color */
-}
-
 #header {
+  background-color: #343a40; /* Bootstrap's dark theme color */
   position: fixed;
 }
 /* Applies styles to the brand name in the navbar */
@@ -109,7 +106,7 @@ html, body {
 
 #app-container {
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column;*/
 }
 
 #content-wrap {
@@ -149,9 +146,8 @@ html, body {
 }
 
 #imgRight {
-  width: 45%;
+  width: auto;
   height: auto;
-  justify-content: center;
 }
 
 #img {
@@ -171,14 +167,18 @@ html, body {
     'header'
     'menu'
     'menu';
+  margin-top: 3rem;
+  margin-bottom: 1rem;
   margin-left: 6rem;
+  height: auto;
+  width: auto;
   background-color: #343a40;
   border-radius: 15%;
   animation: fadeIn 5s;
 }
 
 #grid > h1, h3 {
-  margin: 1rem;
+  margin: 0.5rem;
   padding: 1rem;
   color: #ffffff;
 }

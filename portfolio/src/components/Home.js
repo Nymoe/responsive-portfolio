@@ -17,7 +17,7 @@ export default function Home() {
                     <div>
                         <img src={icon} alt="Nices img" id="img"></img>
                     </div>
-                </Col>
+                </Col> 
             </Row>
         </Container>
     );
